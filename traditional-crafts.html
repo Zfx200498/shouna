@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传统工艺 - 非物质文化遗产传承网</title>
+    <!-- 引入Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- 引入自定义CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .craft-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                        url('https://images.pexels.com/photos/2170387/pexels-photo-2170387.jpeg') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .craft-item {
+            transition: transform 0.3s;
+        }
+
+        .craft-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .craft-image {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .master-card {
+            border: none;
+            transition: transform 0.3s;
+        }
+
+        .master-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .master-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">非遗文化传承</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">传统工艺</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 头部横幅 -->
+    <header class="craft-header mb-5">
+        <div class="container">
+            <h1 class="display-4">传统工艺</h1>
+            <p class="lead">探索中国非物质文化遗产中的传统手工艺术</p>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container">
+        <!-- 工艺介绍 -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4 section-title">工艺分类</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card craft-item shadow-sm">
+                        <img src="https://images.pexels.com/photos/2162938/pexels-photo-2162938.jpeg" class="craft-image" alt="陶瓷艺术">
+                        <div class="card-body">
+                            <h5 class="card-title">陶瓷艺术</h5>
+                            <p class="card-text">千年窑火传承，匠心独运的陶瓷工艺，展现中国传统文化的精髓。</p>
+                            <a href="#" class="btn btn-outline-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card craft-item shadow-sm">
+                        <img src="https://images.pexels.com/photos/6192355/pexels-photo-6192355.jpeg" class="craft-image" alt="刺绣工艺">
+                        <div class="card-body">
+                            <h5 class="card-title">刺绣工艺</h5>
+                            <p class="card-text">针线勾勒山水，丝线绣就乾坤，传统刺绣艺术的精妙展现。</p>
+                            <a href="#" class="btn btn-outline-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card craft-item shadow-sm">
+                        <img src="https://images.pexels.com/photos/6147369/pexels-photo-6147369.jpeg" class="craft-image" alt="剪纸艺术">
+                        <div class="card-body">
+                            <h5 class="card-title">剪纸艺术</h5>
+                            <p class="card-text">一把剪刀，一张红纸，剪出传统文化的精彩故事。</p>
+                            <a href="#" class="btn btn-outline-primary">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 传承人展示 -->
+        <section class="mb-5 bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4 section-title">技艺传承人</h2>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="card master-card text-center">
+                            <div class="card-body">
+                                <img src="https://images.pexels.com/photos/8961395/pexels-photo-8961395.jpeg" class="master-image mb-3" alt="传承人">
+                                <h5 class="card-title">张大师</h5>
+                                <p class="text-muted">陶瓷艺术传承人</p>
+                                <p class="card-text small">从艺40年，精通青花瓷技艺</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card master-card text-center">
+                            <div class="card-body">
+                                <img src="https://images.pexels.com/photos/8961389/pexels-photo-8961389.jpeg" class="master-image mb-3" alt="传承人">
+                                <h5 class="card-title">李大师</h5>
+                                <p class="text-muted">刺绣艺术传承人</p>
+                                <p class="card-text small">苏绣技艺代表性传承人</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card master-card text-center">
+                            <div class="card-body">
+                                <img src="https://images.pexels.com/photos/8961397/pexels-photo-8961397.jpeg" class="master-image mb-3" alt="传承人">
+                                <h5 class="card-title">王大师</h5>
+                                <p class="text-muted">剪纸艺术传承人</p>
+                                <p class="card-text small">潍坊剪纸非遗传承人</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card master-card text-center">
+                            <div class="card-body">
+                                <img src="https://images.pexels.com/photos/8961391/pexels-photo-8961391.jpeg" class="master-image mb-3" alt="传承人">
+                                <h5 class="card-title">赵大师</h5>
+                                <p class="text-muted">漆器艺术传承人</p>
+                                <p class="card-text small">传统漆器制作技艺传承人</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 工艺展示视频 -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4 section-title">工艺展示</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://player.bilibili.com/player.html?aid=xxx&bvid=xxx" 
+                                frameborder="0" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 互动体验 -->
+        <section class="mb-5 bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4 section-title">预约体验</h2>
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="craftType" class="form-label">选择工艺类型</label>
+                                        <select class="form-select" id="craftType">
+                                            <option>陶瓷制作</option>
+                                            <option>刺绣艺术</option>
+                                            <option>剪纸艺术</option>
+                                            <option>漆器制作</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="experienceDate" class="form-label">预约日期</label>
+                                        <input type="date" class="form-control" id="experienceDate">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="contactInfo" class="form-label">联系方式</label>
+                                        <input type="tel" class="form-control" id="contactInfo" placeholder="请输入您的手机号">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">提交预约</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>© 2024 非物质文化遗产传承网. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- 引入Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
